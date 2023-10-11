@@ -28,7 +28,7 @@ class BaseModel:
                 else:
                     self.__dict__[i] = j
         else:
-            models.storage.new(self)
+            """models.storage.new(self)"""
 
     def __str__(self):
         """Returns the official print/str representation of
@@ -40,7 +40,7 @@ class BaseModel:
     def save(self):
         """Updates instance updated_at with the current datetime"""
         self.updated_at = datetime.now()
-        models.storage.save()
+        """ models.storage.save()"""
 
     def to_dict(self):
         """Returns the dictionary of the BaseModel instance.
