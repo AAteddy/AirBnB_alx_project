@@ -8,7 +8,7 @@ Unittest classes:
     TestBaseModel_to_dict
 """
 
-"""import models"""
+import models
 import unittest
 from datetime import datetime
 from models.base_model import BaseModel
@@ -16,7 +16,7 @@ from time import sleep
 
 
 class TestBaseModel_instantiation(unittest.TestCase):
-    """Unittests for testing BaseModel class instantiation."""
+    """Unittest for testing BaseModel class instantiation."""
 
     def test_no_args_instantiation(self):
         self.assertEqual(BaseModel, type(BaseModel()))
